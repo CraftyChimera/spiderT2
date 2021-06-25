@@ -15,7 +15,7 @@ for(int i=0;i<a.length();i++)
     if(a[i]=='>')
         b-=1;//b is reduced everytime a > is found/< is removed
     if (b==0)
-        k=i+1;
+        k=i+1;//a part becomes proper prefix bracket whenever there are equal no of < and > in that portion
 }
 cout<<k<<"\n";
 }
