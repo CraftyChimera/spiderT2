@@ -1,23 +1,20 @@
+//Naive implementation.
 #include<iostream>
 #include<array>
-#include<algorithm>
 typedef long long ll;
 using namespace std;
 int main()
 {ll n,q=1,l=0,r=0,v,max=-1;array<ll,1000000> a;
 cin>>n;
-cin>>q;
+cin>>q;max=n;
 for(int i=0;i<n;i++)
-{a[i]=i+1;
-}
+a[i]=i+1;//Initialise the array
 while(q--)
 {cin>>l>>r>>v;
 for(int i=l-1;i<=r-1;i++)
-a[i]+=v;
-}
-for(int i=0;i<n;i++)
-{if(a[i]>max)
-max=a[i];
+{a[i]+=v;//Update
+if(a[i]>max)
+max=a[i];}//check max value
 }
 cout<<max;
 return 0;
