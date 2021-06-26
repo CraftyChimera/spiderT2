@@ -7,7 +7,7 @@ cin>>n;
 while(n--)
 {b=0;k=0;
 cin>>a;
-for(int i=0;i<a.length();i++)
+for(int i=0;i<int(a.length());i++)
 { if (b<0)
      break;
     if(a[i]=='<')
