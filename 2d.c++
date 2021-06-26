@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 int main()
-{long long n,sum=0,x,y,b;
+{long long n,sum=0,x=0,y=0,b;
 cin>>n;n--;
 cin>>b;sum+=b;
 x=b;
