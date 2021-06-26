@@ -1,4 +1,4 @@
-//Naive implementation.
+//Naive implementation. Doesn't pass the difficult version of test
 #include<iostream>
 #include<array>
 typedef long long ll;
